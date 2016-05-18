@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @meeting.date %>
+</p>
+
+<p>
+  <strong>Cake:</strong>
+  <%= @meeting.cake.name %>
+</p>
+
+<p>
+  <strong>Person:</strong>
+  <%= @meeting.person.name %>
+</p>
+
+<%= link_to 'Edit', edit_meeting_path(@meeting) %> |
+<%= link_to 'Back', meetings_path %>
