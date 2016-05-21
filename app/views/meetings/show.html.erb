@@ -1,19 +1,19 @@
-<p id="notice"><%= notice %></p>
+<p class="bg-success" id="notice"><%= notice %></p>
 
-<p>
+<p class="form-control-static">
   <strong>Date:</strong>
   <%= @meeting.date %>
 </p>
 
-<p>
+<p class="form-control-static">
   <strong>Cake:</strong>
-  <%= @meeting.cake.name %>
+  <%= @meeting.cake.nome %>
 </p>
 
-<p>
+<p class="form-control-static">
   <strong>Person:</strong>
-  <%= @meeting.person.name %>
+  <%= @meeting.person.nome %>
 </p>
 
-<%= link_to 'Edit', edit_meeting_path(@meeting) %> |
-<%= link_to 'Back', meetings_path %>
+<%= link_to 'Edit', edit_meeting_path(@meeting), class:"btn btn-default" %> |
+<%= link_to 'Back', meetings_path, class:"btn btn-default" %>

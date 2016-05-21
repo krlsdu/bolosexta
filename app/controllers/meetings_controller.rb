@@ -15,8 +15,6 @@ class MeetingsController < ApplicationController
   # GET /meetings/new
   def new
     @meeting = Meeting.new
-    @cakes = Cake.all
-    @people = Person.all
   end
 
   # GET /meetings/1/edit
@@ -64,15 +62,13 @@ class MeetingsController < ApplicationController
   end
 
   private
-  # Use callbacks to share common setup or constraints between actions.
-  def set_meeting
-    @meeting = Meeting.find(params[:id])
-    @cakes = Cake.all
-    @people = Person.all
-  end
+    # Use callbacks to share common setup or constraints between actions.
+    def set_meeting
+      @meeting = Meeting.find(params[:id])
+    end
 
-  # Never trust parameters from the scary internet, only allow the white list through.
-  def meeting_params
-    params.require(:meeting).permit(:date, :cake_id, :person_id)
-  end
+    # Never trust parameters from the scary internet, only allow the white list through.
+    def meeting_params
+      params.require(:meeting).permit(:date, :cake_id, :person_id)
+    end
 end

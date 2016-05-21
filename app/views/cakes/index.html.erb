@@ -1,27 +1,28 @@
-<p id="notice"><%= notice %></p>
+<p class="bg-success" id="notice"><%= notice %></p>
 
 <h1>Listing Cakes</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @cakes.each do |cake| %>
+<div class="table-responsive">
+  <table class="table table-striped">
+    <thead>
       <tr>
-        <td><%= cake.name %></td>
-        <td><%= link_to 'Show', cake %></td>
-        <td><%= link_to 'Edit', edit_cake_path(cake) %></td>
-        <td><%= link_to 'Destroy', cake, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <th>Name</th>
+        <th colspan="3"></th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
 
+    <tbody>
+      <% @cakes.each do |cake| %>
+        <tr>
+          <td><%= cake.nome %></td>
+          <td><%= link_to 'Show', cake, class:"btn btn-default" %></td>
+          <td><%= link_to 'Edit', edit_cake_path(cake), class:"btn btn-default" %></td>
+          <td><%= link_to 'Destroy', cake, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-default" %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
 <br>
 
-<%= link_to 'New Cake', new_cake_path %>
+<%= link_to 'New Cake', new_cake_path, class:"btn btn-default" %>
