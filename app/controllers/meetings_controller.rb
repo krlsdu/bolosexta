@@ -28,6 +28,7 @@ class MeetingsController < ApplicationController
 
     respond_to do |format|
       if @meeting.save
+
         format.html { redirect_to @meeting, notice: 'Meeting was successfully created.' }
         format.json { render :show, status: :created, location: @meeting }
       else
@@ -62,13 +63,13 @@ class MeetingsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_meeting
-      @meeting = Meeting.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_meeting
+    @meeting = Meeting.find(params[:id])
+  end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def meeting_params
-      params.require(:meeting).permit(:date, :cake_id, :person_id)
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def meeting_params
+    params.require(:meeting).permit(:date, :cake_id, :person_id)
+  end
 end
