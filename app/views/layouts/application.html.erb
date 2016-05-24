@@ -6,8 +6,24 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
   </head>
+
   <body>
-    <div class="container" >
+    <div class="container" role="navigation" >
+      <nav>
+        <ul class="nav nav-tabs">
+          <li role="presentation" class="active">
+            <%= link_to 'Cake', cakes_path %>
+          </li>
+
+          <li role="presentation">
+            <%= link_to 'Meetings', meetings_path  %>
+          </li>
+          <li role="presentation">
+            <%= link_to 'People', people_path  %>
+          </li>
+        </ul>
+      </nav>
+
       <div class="row">
         <%= yield %>
       </div>
