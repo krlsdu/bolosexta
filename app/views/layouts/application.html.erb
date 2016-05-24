@@ -8,21 +8,13 @@
   </head>
 
   <body>
+    <div class="list-group">
+      <%= link_to 'Meetings', meetings_path, class:"list-group-item active"  %>
+      <%= link_to 'Cake', cakes_path, class:"list-group-item " %>
+      <%= link_to 'People', people_path, class:"list-group-item"  %>
+    </div>
     <div class="container" role="navigation" >
-      <nav>
-        <ul class="nav nav-tabs">
-          <li role="presentation" class="active">
-            <%= link_to 'Cake', cakes_path %>
-          </li>
 
-          <li role="presentation">
-            <%= link_to 'Meetings', meetings_path  %>
-          </li>
-          <li role="presentation">
-            <%= link_to 'People', people_path  %>
-          </li>
-        </ul>
-      </nav>
 
       <div class="row">
         <%= yield %>
