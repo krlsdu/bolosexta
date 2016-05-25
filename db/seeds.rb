@@ -5,26 +5,26 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-bolo_list=['ABACAXI',
-           'BANANA', 'COCO', 'FORMIGUEIRO',
-           'FUBA CREMOSO',
-           'FUBA ERVA DOCE',
-           'FUBA GOIABADA',
-           'GOIABADA',
-           'IOGURTE',
-           'LARANJA',
-           'LIMÃO',
-           'MAÇÃ',
-           'MANDIOCA',
-           'MILHO',
-           'PRESTIGIO',
-           'PUDIM PADARIA'
+bolo_list=['Abacaxi',
+           'Banana', 'Coco', 'Formigueiro',
+           'Fuba Cremoso',
+           'Fuba Erva Doce',
+           'Fuba Goiabada',
+           'Goiabada',
+           'Iogurte',
+           'Laranja',
+           'Limão',
+           'Maçã',
+           'Mandioca',
+           'Milho',
+           'Prestigio',
+           'Pudim Padaria'
 ]
-torta_list=['ATUM',
-            'CARNE',
-            'FRANGO',
-            'LEGUMES',
-            'PALMITO'
+torta_list=['Atum',
+            'Carne',
+            'Frango',
+            'Legumes',
+            'Palmito'
 ]
 
 bolo_list.each do |bolo|

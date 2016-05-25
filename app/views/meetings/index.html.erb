@@ -1,7 +1,11 @@
 <p class="bg-success" id="notice"><%= notice %></p>
 
 <h1>Listing Meetings</h1>
-
+<div class="row">
+  <div class="col-sm-10">
+    <%= link_to 'New Meeting', new_meeting_path, class:"btn btn-default" %>
+  </div>
+</div>
 <div class="table-responsive">
   <table class="table table-striped">
     <thead>
@@ -29,4 +33,4 @@
 </div>
 <br>
 
-<%= link_to 'New Meeting', new_meeting_path, class:"btn btn-default" %>
+

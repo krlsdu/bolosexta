@@ -1,6 +1,11 @@
 <p class="bg-success" id="notice"><%= notice %></p>
 
 <h1>Listing Cakes</h1>
+<div class="row">
+  <div class="col-sm-10">
+    <%= link_to 'New Cake', new_cake_path, class:"btn btn-default " %>
+  </div>
+</div>
 
 <div class="table-responsive">
   <table class="table table-striped">
@@ -25,4 +30,4 @@
 </div>
 <br>
 
-<%= link_to 'New Cake', new_cake_path, class:"btn btn-default" %>
+
