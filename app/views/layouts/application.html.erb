@@ -8,14 +8,16 @@
   </head>
 
   <body>
-    <div class="list-group">
-      <%= link_to 'Meetings', meetings_path, class:"list-group-item active"  %>
-      <%= link_to 'Cake', cakes_path, class:"list-group-item " %>
-      <%= link_to 'People', people_path, class:"list-group-item"  %>
-    </div>
-    <div class="container" role="navigation" >
 
+    <%= nav_bar static: :top, brand: "Bolo de sexta", responsive: true do %>
+      <%= menu_group do %>
+        <%= menu_item "Meetings", meetings_path %>
+        <%= menu_item "Cakes", cakes_path %>
+        <%= menu_item "People", people_path %>
+      <% end %>
+    <% end %>
 
+    <div class="container">
       <div class="row">
         <%= yield %>
       </div>
