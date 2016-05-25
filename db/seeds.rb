@@ -27,9 +27,27 @@ torta_list=['Atum',
             'Palmito'
 ]
 
+people_list=['Aline',
+              'Altair',
+              'Claudio',
+              'Coronel',
+              'Daniel',
+              'Flavio',
+              'James',
+              'Jorge',
+              'Laercio',
+              'Leonardo',
+              'Monica',
+              'Roberta',
+              'Santana'
+]
+
 bolo_list.each do |bolo|
   Cake.create(nome:bolo)
 end
 torta_list.each do |torta|
   Cake.create(nome:torta)
+end
+people_list.each do |person|
+  Person.create(nome:person)
 end
