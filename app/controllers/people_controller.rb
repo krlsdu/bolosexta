@@ -1,3 +1,4 @@
+require 'rest-client'
 class PeopleController < ApplicationController
   before_action :set_person, only: [:show, :edit, :update, :destroy]
 
@@ -5,8 +6,8 @@ class PeopleController < ApplicationController
   # GET /people.json
   def index
     @people = Person.all
-    blowerio = RestClient::Resource.new(ENV['BLOWERIO_URL'])
-    blowerio['/messages'].post :to => '+5511997885739', :message => 'Hello from Blower.io'
+    blower = RestClient::Resource.new(ENV['BLOWERIO_URL'])
+    blower['/messages'].post(to: '+5511997885739', message: 'Hello from Blower')
   end
 
   # GET /people/1
