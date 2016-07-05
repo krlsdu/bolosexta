@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
+  get 'messages/reply'
+
   resources :meetings
   resources :cakes
-  resources :people
-  resources :people
   resources :people
   resources :meetings
   # The priority is based upon order of creation: first created -> highest priority.
@@ -10,6 +10,12 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'meetings#index'
+
+  resource :messages do
+    collection do
+      post 'reply'
+    end
+  end
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
