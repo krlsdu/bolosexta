@@ -5,6 +5,8 @@ class PeopleController < ApplicationController
   # GET /people.json
   def index
     @people = Person.all
+    blowerio = RestClient::Resource.new(ENV['BLOWERIO_URL'])
+    blowerio['/messages'].post :to => '+5511997885739', :message => 'Hello from Blower.io'
   end
 
   # GET /people/1
