@@ -26,6 +26,7 @@
           <td><%= link_to 'Show', meeting, class:"btn btn-default" %></td>
           <td><%= link_to 'Edit', edit_meeting_path(meeting),class:"btn btn-default" %></td>
           <td><%= link_to 'Destroy', meeting, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-default" %></td>
+          <td><%= link_to 'Sms', messages_reply_path, method: :reply, data: { confirm: 'Are you sure?' }, class:"btn btn-default" %></td>
         </tr>
       <% end %>
     </tbody>

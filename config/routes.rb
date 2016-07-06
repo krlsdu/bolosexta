@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  # get 'messages/reply'
+  get 'messages/reply'
 
   resources :meetings
   resources :cakes
