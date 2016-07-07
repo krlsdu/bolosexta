@@ -4,6 +4,13 @@
   <strong>Name:</strong>
   <%= @person.nome %>
 </p>
+<p class="form-control-static">
+  <strong>Phone Number:</strong>
+  <%= @person.cellphone %>
+</p>
+<p class="form-control-static">
+  <strong>The phone number is encrypted</strong>
+</p>
 
 <%= link_to 'Edit', edit_person_path(@person), class:"btn btn-default" %> |
 <%= link_to 'Back', people_path, class:"btn btn-default" %>
