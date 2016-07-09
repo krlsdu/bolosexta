@@ -19,13 +19,13 @@ class PeopleController < ApplicationController
 
   # GET /people/1/edit
   def edit
+    @person.cellphone.clear
   end
 
   # POST /people
   # POST /people.json
   def create
     @person = Person.new(person_params)
-    encrypt_cellphone
 
     respond_to do |format|
       if @person.save
@@ -41,7 +41,6 @@ class PeopleController < ApplicationController
   # PATCH/PUT /people/1
   # PATCH/PUT /people/1.json
   def update
-    encrypt_cellphone
     respond_to do |format|
       if @person.update(person_params)
         format.html { redirect_to @person, notice: 'Person was successfully updated.' }
@@ -72,17 +71,5 @@ class PeopleController < ApplicationController
   # Never trust parameters from the scary internet, only allow the white list through.
   def person_params
     params.require(:person).permit(:nome, :cellphone)
-  end
-
-  def encrypt_cellphone
-    # salt  = SecureRandom.random_bytes(64)
-    key   = ActiveSupport::KeyGenerator.new('password').generate_key('salt')
-    crypt = ActiveSupport::MessageEncryptor.new(key)
-    @person.cellphone = crypt.encrypt_and_sign(@person.cellphone)
-  end
-  def decrypt_cellphone
-    key   = ActiveSupport::KeyGenerator.new('password').generate_key('salt')
-    crypt = ActiveSupport::MessageEncryptor.new(key)
-    @person.cellphone = crypt.decrypt_and_verify(@person.cellphone)
   end
 end
