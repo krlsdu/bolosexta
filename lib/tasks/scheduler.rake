@@ -1,11 +1,12 @@
+require 'net/http'
 desc "This task is called by the Heroku scheduler add-on"
-task :update_feed => :environment do
-    puts "Updating feed..."
-      NewsFeed.update
-        puts "done."
-end
-
-task :send_reminders => :environment do
-    User.send_reminders
+task :send_sms => :environment do
+    unless Date.today.thursday?
+        url = URI.parse('http://bolosexta.herokuapp.com/messages/reply')
+        req = Net::HTTP::Get.new(url.to_s)
+        res = Net::HTTP.start(url.host, url.port) {|http|
+            http.request(req)
+        }
+    end
 end
 
