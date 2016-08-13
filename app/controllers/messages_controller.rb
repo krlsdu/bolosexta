@@ -6,7 +6,7 @@ class MessagesController < ApplicationController
     boot_twilio
     sms = @client.messages.create(
       from: Rails.application.secrets.twilio_number,
-      to: '+55'+@person.find(person_id).cellphone,
+      to: '+55'+@person.find(recovery_person_id).cellphone,
       body: "Hello there, your time to buy the cake."
     )
   end
