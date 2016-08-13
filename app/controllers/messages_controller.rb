@@ -6,7 +6,7 @@ class MessagesController < ApplicationController
     boot_twilio
     sms = @client.messages.create(
       from: Rails.application.secrets.twilio_number,
-      to: '+55'+@person.find(recovery_person_id).cellphone,
+      to: '+5511983721392',
       body: "Hello there, your time to buy the cake."
     )
   end
@@ -17,9 +17,5 @@ class MessagesController < ApplicationController
     account_sid = Rails.application.secrets.twilio_sid
     auth_token = Rails.application.secrets.twilio_token
     @client = Twilio::REST::Client.new account_sid, auth_token
-  end
-
-  def recovery_person_id
-    Meeting.order(:date).first.person_id
   end
 end
