@@ -20,6 +20,6 @@ class MessagesController < ApplicationController
   end
 
   def recovery_person_id
-    @meeting.order(:date).first.person_id
+    Meeting.order(:date).first.person_id
   end
 end
