@@ -18,4 +18,9 @@ class MessagesController < ApplicationController
     auth_token = Rails.application.secrets.twilio_token
     @client = Twilio::REST::Client.new account_sid, auth_token
   end
+
+  def recovery_person_id
+    @meeting.order(:date).first.person_id
+
+  end
 end
