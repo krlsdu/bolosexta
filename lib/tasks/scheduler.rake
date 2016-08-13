@@ -1,4 +1,3 @@
-require 'net/http'
 desc "This task is called by the Heroku scheduler add-on"
 task :send_sms => :environment do
     if Date.today.thursday?
