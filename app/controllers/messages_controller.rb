@@ -18,4 +18,11 @@ class MessagesController < ApplicationController
     auth_token = Rails.application.secrets.twilio_token
     @client = Twilio::REST::Client.new account_sid, auth_token
   end
+
+  def cellphone
+    sexta = Meeting.where(date:Date.tomorrow)
+    person_id = sexta[0].person_id
+    cellphone_person = Person.find(person_id).cellphone
+    "+55".concat(cellphone_person)
+  end
 end
