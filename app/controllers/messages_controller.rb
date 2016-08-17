@@ -20,7 +20,7 @@ class MessagesController < ApplicationController
   end
 
   def cellphone
-    sexta = Meeting.where(date:DateTime.now+2)
+    sexta = Meeting.where(date:DateTime.now.tomorrow.to_date)
     cellphone_person = sexta[0].person.cellphone
     "+55".concat(cellphone_person)
   end
