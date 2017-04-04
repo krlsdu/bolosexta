@@ -6,7 +6,7 @@
 </p>
 <p class="form-control-static">
   <strong>Phone Number:</strong>
-  <%= @person.encrypted_cellphone%>
+  <%= number_to_phone @person.cellphone, country_code:55%>
 </p>
 <p class="form-control-static">
   <strong>The phone number is encrypted</strong>

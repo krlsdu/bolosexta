@@ -6,13 +6,15 @@
 #
 default: &default
   adapter: postgresql
-  host: localhost
   pool: 5
   timeout: 5000
+  username: postgres
+  password:
 
 development:
   <<: *default
   database: development
+  host: db
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -20,7 +22,9 @@ development:
 test:
   <<: *default
   database: test
+  host: db
 
 production:
   <<: *default
   database: production
+  host: localhost
