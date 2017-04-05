@@ -1,6 +1,6 @@
 version: '2'
 services:
-  db:
+  postgres:
     image: postgres
   web:
     build: .
@@ -10,4 +10,4 @@ services:
     ports:
       - "3000:3000"
     depends_on:
-      - db
+      - postgres
