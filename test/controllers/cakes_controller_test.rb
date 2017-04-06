@@ -18,7 +18,7 @@ class CakesControllerTest < ActionController::TestCase
 
   test "should create cake" do
     assert_difference('Cake.count') do
-      post :create, cake: { nome: @cake.nome }
+      post :create, cake: { name: @cake.name }
     end
 
     assert_redirected_to cake_path(assigns(:cake))
@@ -35,7 +35,7 @@ class CakesControllerTest < ActionController::TestCase
   end
 
   test "should update cake" do
-    patch :update, id: @cake, cake: { nome: @cake.nome }
+    patch :update, id: @cake, cake: { name: @cake.name }
     assert_redirected_to cake_path(assigns(:cake))
   end
 

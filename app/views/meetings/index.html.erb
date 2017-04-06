@@ -22,8 +22,8 @@
         <% cache meeting do %>
         <tr>
         <td><%= meeting.date %></td>
-        <td><%= meeting.cake.nome %></td>
-        <td><%= meeting.person.nome %></td>
+        <td><%= meeting.cake.name %></td>
+        <td><%= meeting.person.name %></td>
         <td><%= link_to 'Show', meeting, class:"btn btn-default" %></td>
         <td><%= link_to 'Edit', edit_meeting_path(meeting),class:"btn btn-default" %></td>
         <td><%= link_to 'Destroy', meeting, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-default" %></td>

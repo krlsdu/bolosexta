@@ -19,7 +19,7 @@
     <tbody>
       <% @cakes.each do |cake| %>
         <tr>
-          <td><%= cake.nome %></td>
+          <td><%= cake.name %></td>
           <td><%= link_to 'Show', cake, class:"btn btn-default" %></td>
           <td><%= link_to 'Edit', edit_cake_path(cake), class:"btn btn-default" %></td>
           <td><%= link_to 'Destroy', cake, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-default" %></td>

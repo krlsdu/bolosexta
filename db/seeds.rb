@@ -43,11 +43,11 @@ people_list=['Aline',
 ]
 
 bolo_list.each do |bolo|
-  Cake.create(nome:bolo)
+  Cake.create(name:bolo)
 end
 torta_list.each do |torta|
-  Cake.create(nome:torta)
+  Cake.create(name:torta)
 end
 people_list.each do |person|
-  Person.create(nome:person)
+  Person.create(name:person)
 end
