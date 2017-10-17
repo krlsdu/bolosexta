@@ -1,6 +1,8 @@
 {<img alt='Stories in Ready' src='https://badge.waffle.io/krlsdu/bolosexta.png?label=ready&title=Ready' />}[https://waffle.io/krlsdu/bolosexta]
 
-## Code of conduct
+
+
+== Code of conduct
 
 We are all passionate developers (you including), and working on OSS projects on our free time.
 We are also coming from different countries, speak different languages belong to different cultures,
