@@ -1,4 +1,22 @@
 {<img alt='Stories in Ready' src='https://badge.waffle.io/krlsdu/bolosexta.png?label=ready&title=Ready' />}[https://waffle.io/krlsdu/bolosexta]
+
+
+
+== Code of conduct
+
+We are all passionate developers (you including), and working on OSS projects on our free time.
+We are also coming from different countries, speak different languages belong to different cultures,
+ have different sets of believes and are all different ages. What makes us similar is a burning desire to
+ build something better for us and other people.
+
+As such, please follow these simple rules of conduct:
+
+* Do not force your opinion, instead make suggestions
+* Do not bash other people's code, no matter how bad you think it is. Instead, suggest an improvement,
+or better yet do it yourself.
+* Do not call other members any names (what is acceptable in your society, might  sound abrasive in others )
+* Generally, be polite and respectful of other members in comments, regardless what opinion you might have
+
 == README
 
 This README would normally document whatever steps are necessary to get the
