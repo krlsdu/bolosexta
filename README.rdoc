@@ -1,6 +1,6 @@
-{<img alt='Stories in Ready' src='https://badge.waffle.io/krlsdu/bolosexta.png?label=ready&title=Ready' />}[https://waffle.io/krlsdu/bolosexta]
+{<img src="https://travis-ci.org/krlsdu/bolosexta.svg?branch=master" alt="Build Status" />}[https://travis-ci.org/krlsdu/bolosexta]
 
-
+{<img src="https://heroku-badge.herokuapp.com/?app=bolosexta&style=flat&svg=1" />}[https://heroku-badge.herokuapp.com/?app=bolosexta&style=flat&svg=1]
 
 == Code of conduct
 
