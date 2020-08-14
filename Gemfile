@@ -51,4 +51,4 @@ end
 gem 'rails_12factor', group: :production
 gem 'puma'
 
-ruby "2.7.0"
+ruby "2.6.6"
