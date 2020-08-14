@@ -52,7 +52,7 @@ GEM
     coffee-script-source (1.10.0)
     commonjs (0.2.7)
     concurrent-ruby (1.1.5)
-    crass (1.0.4)
+    crass (1.0.6)
     debug_inspector (0.0.2)
     encryptor (3.0.0)
     erubis (2.7.0)
@@ -80,7 +80,7 @@ GEM
       sprockets (> 2, < 4)
       tilt
     libv8 (3.16.14.15)
-    loofah (2.2.3)
+    loofah (2.6.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.6.4)
