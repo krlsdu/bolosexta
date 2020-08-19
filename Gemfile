@@ -50,5 +50,5 @@ end
 
 gem 'rails_12factor', group: :production
 gem 'puma'
-
+gem 'bootsnap', require: false
 ruby "2.6.6"
