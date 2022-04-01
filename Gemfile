@@ -1,7 +1,9 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '5.2.4.3'
+gem 'rails', '5.2.7'
+
+gem 'listen', '~> 3.7', '>= 3.7.1'
 # Use sqlite3 as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
@@ -51,4 +53,4 @@ end
 gem 'rails_12factor', group: :production
 gem 'puma'
 gem 'bootsnap', require: false
-ruby "2.6.6"
+ruby "2.7.5"
