@@ -1,8 +1,9 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '5.2.7'
+gem 'rails', '6.0'
 
+gem 'webpacker', '~> 5.4', '>= 5.4.3'
 gem 'listen', '~> 3.7', '>= 3.7.1'
 # Use sqlite3 as the database for Active Record
 gem 'pg'
