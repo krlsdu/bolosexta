@@ -87,6 +87,8 @@ GEM
     faraday-rack (1.0.0)
     faraday-retry (1.0.3)
     ffi (1.15.5)
+    font-awesome-rails (4.7.0.8)
+      railties (>= 3.2, < 8.0)
     globalid (1.0.0)
       activesupport (>= 5.0)
     i18n (1.10.0)
@@ -234,6 +236,7 @@ DEPENDENCIES
   bootsnap
   byebug
   coffee-rails (~> 5.0.0)
+  font-awesome-rails
   informant-rails
   jbuilder (~> 2.0)
   jquery-rails
