@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '6.0'
+gem 'rails', '6.1'
 
 gem 'webpacker', '~> 5.4', '>= 5.4.3'
 gem 'listen', '~> 3.7', '>= 3.7.1'
